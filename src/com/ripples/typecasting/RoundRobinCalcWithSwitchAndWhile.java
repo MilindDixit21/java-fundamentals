@@ -69,7 +69,7 @@ public class RoundRobinCalcWithSwitchAndWhile {
 			case "/": if(a == 0) {
 				System.out.println("The divisor cannot be zero, Please re-enter ：: ");
 				break;
-				}
+				}else
 				c= division(a);
 				System.out.println("= "+c);
 				break;
