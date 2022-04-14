@@ -1,6 +1,5 @@
 package com.ripples.arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayDemo {
@@ -31,10 +30,10 @@ public class ArrayDemo {
 				}
 			}
 			if (match == 0) {
-				System.out.println("User is not found with userid " + uid);
+				System.out.println("User NOT found with the userid " + uid);
 				System.out.println("----------------");
 			}
-		}
+		}scan.close();
 	}
 
 }
