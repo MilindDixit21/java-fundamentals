@@ -97,7 +97,7 @@ public class BankOperations {
 
 	}
 	public void showAccntDetails(Account account) {
-		System.out.println("---------------------------------------------------------------------------");
+		System.out.println("--- Account Details:-------------------------------------------------------");
 		System.out.println("Name: "+account.userName+" | Account number: "+account.accNo+" | Balace: "+account.accBalance);
 		System.out.println("---------------------------------------------------------------------------");
 	}
