@@ -10,10 +10,10 @@ import java.util.Vector;
 public class ListDemo {
 	public static void main(String[] args) {
 		
-		List<String> list1 = new ArrayList<String>();
-//		List<String> list2 = new LinkedList<String>();
-//		List<String> list3 = new Vector<String>();
-//		List<String> list4 = new Stack<String>();
+		List<String> list1 = new ArrayList<String>(); //better read operations. *NOT Thread safe
+//		List<String> list2 = new LinkedList<String>(); //insert, delete, replace. *NOT Thread safe
+//		List<String> list3 = new Vector<String>();  //Thread safe
+//		List<String> list4 = new Stack<String>();   //Thread safe
 		
 		
 		list1.add("bob");
