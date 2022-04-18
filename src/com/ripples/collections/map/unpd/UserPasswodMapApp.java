@@ -4,24 +4,21 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class UserPasswodMap1 {
+public class UserPasswodMapApp {
 
 	public static void main(String[] args) {
 
 		Map<String, String> upmap = new LinkedHashMap<String, String>();
 		createNewUser("nw", upmap);
-		
-
 	}
 
 	private static void createNewUser(String a, Map<String, String> b) {
 		boolean until = true;
+		System.out.println("___________________________________________________________");
 		Scanner scan = new Scanner(System.in);
-		System.out.println("---------------------------------------------------------------");
 			System.out.println("======:USER REGISTRTION:======");
 			System.out.println("(Please enter username & password to create a new account.)");
 			System.out.println("-----------------------------------------------------------");
-			System.out.println(" ");
 		do {
 			System.out.print("Enter Username:");
 			String un = scan.nextLine();
@@ -53,12 +50,13 @@ public class UserPasswodMap1 {
 		System.out.println("----------------------------------");
 		System.out.println(" ");
 
-		scan.close();
+//		scan.close();
 		choices("a", b);
 	}
 	
 	public static void choices(String a, Map<String, String> b) {
-		System.out.print("Select Option::(1  2  3) \n1.Registered User? Enter your UserName   \n2.Create New Account  \n3.Exit  \nYour selected option:");
+		System.out.println("==========:Welcome to UNPDL:============");
+		System.out.print("1. Registered User? Enter your UserName   \n2. Create New Account  \n3. Exit \n----------------------------------------  \nYour Please enter your option::");
 		Scanner s3 = new Scanner(System.in);
 		int choice = s3.nextInt();
 
@@ -70,13 +68,17 @@ public class UserPasswodMap1 {
 			createNewUser("nw", b);
 			break;
 		case 3:
+			System.out.println("__________________________________");
+			System.out.println("----------------------------------");
+			System.out.println("Successfully logged out.");
+			System.out.println("----------------------------------");
 			System.exit(0);
 			break;
 		default:
 			System.out.println("Invalid selection. please choose correct option");
 
 		}
-		s3.close();
+//		s3.close();
 	}
 	
 	public static void findUser(String uiname, Map<String, String> b) {
@@ -102,7 +104,8 @@ public class UserPasswodMap1 {
 			System.out.println("User not available.");
 			createNewUser("nw", b);
 
-		}scan2.close();
+		}
+//		scan2.close();
 	}
 
 }
