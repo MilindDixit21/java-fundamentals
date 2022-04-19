@@ -8,7 +8,7 @@ public class BankMain {
 		
 		Scanner scann = new Scanner(System.in);
 		
-		System.out.println("===:Open your account with our Bank Application:===");
+		System.out.println("===::Open New Bank Account::===");
 		System.out.println(" ");
 		System.out.print("Enter customer name:");
 		String userName = scann.nextLine();

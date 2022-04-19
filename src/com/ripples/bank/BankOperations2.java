@@ -2,7 +2,7 @@ package com.ripples.bank;
 
 import java.util.Scanner;
 
-public class BankOperations {
+public class BankOperations2 {
 
 	public void operate(Account account) {
 		System.out.println(" ");
