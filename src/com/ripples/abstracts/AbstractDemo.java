@@ -1,13 +1,5 @@
 package com.ripples.abstracts;
 
-public class AbstractDemo {
-	public static void main(String[] args) {
-		GrandSon gs = new GrandSon();
-		gs.displayName("Harry");
-		gs.displayContact("1234567");
-	}
-}
-
 // abstract class
 abstract class Father {
 	
@@ -29,6 +21,15 @@ abstract class Son extends Father {
 class GrandSon extends Son {
 	void displayContact(String b) {
 		System.out.println("Contact: " + b);
+	}
+}
+
+//public class w/ main method*
+public class AbstractDemo { 
+	public static void main(String[] args) {
+		GrandSon gs = new GrandSon();
+		gs.displayName("Harry");
+		gs.displayContact("1234567");
 	}
 }
 

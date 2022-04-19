@@ -8,7 +8,7 @@ public class AbstractDemo2 {
 		sc.displayName("GHS");
 		sc.displayPin(111525);
 		
-		System.out.println("--------------------");
+		System.out.println("");
 		
 		pk.displayName("Riverfront");
 		pk.displayPin(534723);
@@ -19,6 +19,7 @@ public class AbstractDemo2 {
 //implemented both methods*
 class School extends ParkAndCity {
 	void displayName(String a) {
+		System.out.println("--nearby school-----------");
 		System.out.println("Name: " + a);
 	}
 	void displayPin(int b) {
@@ -29,6 +30,7 @@ class School extends ParkAndCity {
 //implemented both methods*
 class Park extends ParkAndCity {
 	void displayName(String a) {
+		System.out.println("--nearby park-----------");
 		System.out.println("Name: " + a);
 	}
 	void displayPin(int b) {
