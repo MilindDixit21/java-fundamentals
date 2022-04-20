@@ -18,26 +18,31 @@ public class SetDemo {
 		set1.add("Kiwi");
 		set1.add("Peach");
 		
-		System.out.println(set1); //TreeSet > preserve ascending order
-		System.out.println(set1.descendingSet()); //TreeSet > preserve descending order
-		
 		set2.add("Hartford");
 		set2.add("Welington");
 		set2.add("Manchester");
 		
-//		System.out.println(set2);
+		set3.add("spring");
+		set3.add("summer");
+		set3.add("winter");
+		
+		//----TreeSet-----
+		//TreeSet > preserve ascending order
+		System.out.println(set1); 
+		//TreeSet > descending order
+		System.out.println(set1.descendingSet()); 
+		
+		
+		//----HashSet----
 		System.out.println(" ");
 		//iterator
 		Iterator<String> se2 = set2.iterator();
 		while(se2.hasNext()) {
 			System.out.println(se2.next());
 		}
-		
-		set3.add("spring");
-		set3.add("summer");
-		set3.add("winter");
-		
-//		advanced for loop
+				
+		//----LinkedHashSet----
+		//advanced for loop
 		System.out.println(" ");
 		for(String s3 :set3) {
 			System.out.println(s3);
