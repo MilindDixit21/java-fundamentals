@@ -28,6 +28,7 @@ public class SerializationDemo {
 			out.writeObject(employee2);
 			System.out.println("Serialization is completed!");
 			
+			out.close();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
