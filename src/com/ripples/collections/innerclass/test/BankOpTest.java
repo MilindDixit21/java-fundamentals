@@ -1,8 +1,5 @@
 package com.ripples.collections.innerclass.test;
 
-import com.ripples.collections.innerclass.test.BankOpTest.Banking;
-import com.ripples.collections.innerclass.test.BankOpTest.Lockers;
-
 public class BankOpTest { //outerclass
 
 	class Banking { //innerclass

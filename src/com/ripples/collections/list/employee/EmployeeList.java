@@ -23,18 +23,27 @@ public class EmployeeList {
 		System.out.println(" ");
 		System.out.println("-----counter for loop------------");
 		for (int index = 0; index < empList.size(); index++) {
-			System.out.println("Element at index: " + index + " : " + empList.get(index));
+//			System.out.println("Element at index: " + index + " : " + empList.get(index).name);System.out.println("Element at index: " + index + " : " + empList.get(index));
+			System.out.println("Employee id  : " + empList.get(index).id+"\nEmployee name    : "+empList.get(index).name+"\nEmployee roll  : " + empList.get(index).roll+"\nEmployee salary: "+ empList.get(index).salary);
+			System.out.println("................................");
 		}
 
+		
 		empList.add(1, employee4);
 		empList.add(0, employee5);
 
 		// Iterator
 		System.out.println(" ");
-		System.out.println("-----Iterator for list------------");
+		System.out.println("====:: Iterator for list ::======");
 		Iterator<Employee> employeeList = empList.iterator();
 		while (employeeList.hasNext()) {
-			System.out.println(employeeList.next());
+//			System.out.println(employeeList.next());
+			Employee eml = employeeList.next();
+			System.out.println("Employee name  : " + eml.id);
+			System.out.println("Employee id    : "+eml.name);
+			System.out.println("Employee roll  : " +eml.roll);
+			System.out.println("Employee salary: "+eml.salary);
+			System.out.println("--------------------------------");
 		}
 
 		// replace
