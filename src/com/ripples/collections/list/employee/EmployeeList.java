@@ -3,6 +3,7 @@ package com.ripples.collections.list.employee;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class EmployeeList {
 	public static void main(String[] args) {
@@ -35,7 +36,8 @@ public class EmployeeList {
 		// Iterator
 		System.out.println(" ");
 		System.out.println("====:: Iterator for list ::======");
-		Iterator<Employee> employeeList = empList.iterator();
+		ListIterator<Employee> employeeList = empList.listIterator();
+//		Iterator<Employee> employeeList = empList.iterator();
 		while (employeeList.hasNext()) {
 //			System.out.println(employeeList.next());
 			Employee eml = employeeList.next();
